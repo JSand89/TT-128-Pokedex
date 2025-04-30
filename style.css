@@ -1,4 +1,38 @@
 body{
-    background-color: darkblue;
+    background-color: black;
     color: aliceblue;
+}
+.pokedex-container{
+    border: 1px solid yellow;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+
+#pokemonList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid red;
+}
+.pokemon-card{
+    border: 1px solid #f0f0f0;
+    border-radius: 150px;
+    margin: 5%;
+}
+
+@media (width < 500px) {
+    #pokemonList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (width < 700px) and (width >= 500px){
+    #pokemonList{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+@media (width < 900px) and (width >= 700px){
+    #pokemonList{
+        grid-template-columns: repeat(3, 1fr);
+    }  
 }
