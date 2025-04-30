@@ -9,11 +9,23 @@ body{
     text-align: center;
     width: 90%;
 }
-
+#pokemonDetail{
+    display: flex;
+    flex-direction: column;
+}
+/* #pokemonInfo{
+} */
 #pokemonList{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     border: 1px solid red;
+}
+.grass{
+    border: 1px solid green;
+}
+.fire{
+    border: 1px solid red;
+
 }
 .pokemon-card{
     border: 1px solid #f0f0f0;
